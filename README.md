@@ -1,1 +1,1 @@
-![techsavvyash's engineering motto](./README.jpeg)
+![techsavvyash's logo](./README.png)

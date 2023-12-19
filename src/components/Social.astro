@@ -1,0 +1,15 @@
+---
+const { platform, username, logo } = Astro.props;
+---
+<a href={`https://www.${platform}.com/${username}`} target="_blank">
+  <div class={logo} title={platform} />
+</a>
+
+<style>
+  div {
+    display: inline-block;
+  }
+  a {
+    color: #636363;
+  }
+</style>

@@ -34,9 +34,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="flex-grow ha">
 			<section>
-				<ul>
+				<!-- <ul>
 					{
 						posts.map((post) => (
 							<li>
@@ -51,9 +51,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 							</li>
 						))
 					}
-				</ul>
+				</ul> -->
+				<div class="h-full"> 
+				Blogs coming soon!
+
+				</div>
+
 			</section>
 		</main>
+		<div class="mt-auto" />
 		<Footer />
 	</body>
 </html>

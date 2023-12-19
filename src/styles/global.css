@@ -9,11 +9,11 @@ body {
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #000;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: #9d9c9c;
 }
 h1,
 h2,
