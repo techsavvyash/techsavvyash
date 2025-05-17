@@ -1,7 +1,7 @@
 ---
 title: Veil
 tags: 
-    - projects
+    - products
     - open source
 ---
 
