@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>techsavvyash.dev</title>
+      <title>Yash Mittal</title>
       <link>https://techsavvyash.dev</link>
-      <description>Last 10 notes on techsavvyash.dev</description>
+      <description>Last 10 notes on Yash Mittal</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>OIDC Lite</title>
+    <link>https://techsavvyash.dev/projects/OIDC</link>
+    <guid>https://techsavvyash.dev/projects/OIDC</guid>
+    <description></description>
+    <pubDate>Sat, 17 May 2025 19:18:45 GMT</pubDate>
+  </item><item>
+    <title>Beckn</title>
+    <link>https://techsavvyash.dev/projects/Beckn</link>
+    <guid>https://techsavvyash.dev/projects/Beckn</guid>
+    <description></description>
+    <pubDate>Sat, 17 May 2025 19:17:37 GMT</pubDate>
+  </item><item>
+    <title>Verifiable Credentials</title>
+    <link>https://techsavvyash.dev/projects/RCW</link>
+    <guid>https://techsavvyash.dev/projects/RCW</guid>
+    <description></description>
+    <pubDate>Sat, 17 May 2025 19:16:33 GMT</pubDate>
+  </item><item>
+    <title>StylusDB</title>
+    <link>https://techsavvyash.dev/projects/Stylus</link>
+    <guid>https://techsavvyash.dev/projects/Stylus</guid>
+    <description></description>
+    <pubDate>Sat, 17 May 2025 19:15:17 GMT</pubDate>
+  </item><item>
+    <title>Veil</title>
+    <link>https://techsavvyash.dev/projects/Veil</link>
+    <guid>https://techsavvyash.dev/projects/Veil</guid>
+    <description>Veil is a modded caddy module that.</description>
+    <pubDate>Sat, 17 May 2025 19:14:59 GMT</pubDate>
+  </item><item>
+    <title>Bharat Sah&#039;AI&#039;yak</title>
+    <link>https://techsavvyash.dev/projects/BSAI</link>
+    <guid>https://techsavvyash.dev/projects/BSAI</guid>
+    <description>Bharat Sah’AI’yak or BSAI is a AI enabled compute platform aimed to be flexible enough to serve a varied variety of usecases from building RAG based chatbots (like AKAI, KMAI, MahaKumbh bot etc.</description>
+    <pubDate>Sat, 17 May 2025 19:12:33 GMT</pubDate>
+  </item><item>
+    <title>My Work</title>
+    <link>https://techsavvyash.dev/projects/</link>
+    <guid>https://techsavvyash.dev/projects/</guid>
+    <description>I started programming in 2020 during CoVID-19 quarantine lockdown right after I graduated high school and appeard for JEE.</description>
+    <pubDate>Sat, 17 May 2025 18:32:40 GMT</pubDate>
+  </item><item>
+    <title>Blogs</title>
+    <link>https://techsavvyash.dev/blogs/</link>
+    <guid>https://techsavvyash.dev/blogs/</guid>
+    <description>Nothing here yet! Hopefully I start writing soon.</description>
+    <pubDate>Sat, 17 May 2025 18:29:53 GMT</pubDate>
+  </item><item>
     <title>~/techsavvyash</title>
     <link>https://techsavvyash.dev/</link>
     <guid>https://techsavvyash.dev/</guid>
-    <description>Hi, I’m Yash Mittal - a software engineer trying to tinker around with things while figuring out how to build systems that are usable and help make people’s lives easier.</description>
-    <pubDate>Sat, 10 May 2025 17:47:21 GMT</pubDate>
+    <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
+    <pubDate>Sat, 17 May 2025 17:11:30 GMT</pubDate>
   </item>
     </channel>
   </rss>
