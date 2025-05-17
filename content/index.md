@@ -1,6 +1,7 @@
 ---
-title: Welcome to Quartz
+title: ~/techsavvyash
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Hi, I'm Yash Mittal - a software engineer trying to tinker around with things while figuring out how to build systems that are usable and help make people's lives easier. I have 3 years of experience working on production systems which are deployed in couple of Indian states helping the under privileged strata of the population thanks to the projects I got to work on during my time at [Samagra](https://samagragovernance.in/). Presently, I ship code at [Zomato]() trying to get simplify merchant's lives who help those of us with busy lives with a hot meal when we are too occupied with our hustle.
+
+I am deeply interested in building scalable large scale systems, simplifying developer workflows and sustainably building for AI. The most recent areas of interest I have are datacentres because of the advent in AI agents like [cursor](https://www.cursor.com/), [claude code](https://www.anthropic.com/claude-code) etc. 
