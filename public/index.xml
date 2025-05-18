@@ -6,16 +6,58 @@
       <description>Last 10 notes on Yash Mittal</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Stencil</title>
-    <link>https://techsavvyash.dev/projects/Stencil</link>
-    <guid>https://techsavvyash.dev/projects/Stencil</guid>
-    <description></description>
-    <pubDate>Sat, 17 May 2025 19:24:18 GMT</pubDate>
-  </item><item>
     <title>Bharat Sah&#039;AI&#039;yak</title>
     <link>https://techsavvyash.dev/projects/BSAI</link>
     <guid>https://techsavvyash.dev/projects/BSAI</guid>
     <description>Bharat Sah’AI’yak or BSAI is a AI enabled compute platform aimed to be flexible enough to serve a varied variety of usecases from building RAG based chatbots (like AKAI, KMAI, MahaKumbh bot etc.</description>
+    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+  </item><item>
+    <title>Verifiable Credentials</title>
+    <link>https://techsavvyash.dev/projects/RCW</link>
+    <guid>https://techsavvyash.dev/projects/RCW</guid>
+    <description>Project Description for RCW</description>
+    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+  </item><item>
+    <title>Stencil</title>
+    <link>https://techsavvyash.dev/projects/Stencil</link>
+    <guid>https://techsavvyash.dev/projects/Stencil</guid>
+    <description>Stencil is yet another JavaScript framework built on top of NestJS which is another backend JavaScript framework inspired by AngularJS.</description>
+    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+  </item><item>
+    <title>Veil</title>
+    <link>https://techsavvyash.dev/projects/Veil</link>
+    <guid>https://techsavvyash.dev/projects/Veil</guid>
+    <description>Veil is a modded caddy fork which gives API paywalls as a built in feature to the caddy webserver running in a reverse proxy mode.</description>
+    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+  </item><item>
+    <title>~/techsavvyash</title>
+    <link>https://techsavvyash.dev/</link>
+    <guid>https://techsavvyash.dev/</guid>
+    <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
+    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+  </item><item>
+    <title>Blogs</title>
+    <link>https://techsavvyash.dev/blogs/</link>
+    <guid>https://techsavvyash.dev/blogs/</guid>
+    <description>I haven’t been able to finish any of the blogs yet, but some of the ones I am currently working on are listed below, will keep publishing them as I find them to be in a readable state.</description>
+    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+  </item><item>
+    <title>Beckn</title>
+    <link>https://techsavvyash.dev/projects/Beckn</link>
+    <guid>https://techsavvyash.dev/projects/Beckn</guid>
+    <description>Beckn is a universal resource discovery and transaction protocol that enables the leap to open, decentralized, and interoperable peer-to-peer networks.</description>
+    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+  </item><item>
+    <title>OIDC Lite</title>
+    <link>https://techsavvyash.dev/projects/OIDC</link>
+    <guid>https://techsavvyash.dev/projects/OIDC</guid>
+    <description>OIDC Lite is a project I built with my college friends Debatreya, Utkarsh &amp; Ashutosh to learn more about the OIDC protocol and also because we wanted a lighter alternative to FusionAuth and KeyCloak which are great feature rich projects but for most usecases we don’t need those features and whil...</description>
+    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+  </item><item>
+    <title>StylusDB</title>
+    <link>https://techsavvyash.dev/projects/Stylus</link>
+    <guid>https://techsavvyash.dev/projects/Stylus</guid>
+    <description>StylusDB is a collection (presently 2 but there will be more) of toy databases built by me and Chakshu Gautam while trying to tinker around and learn the database internals.</description>
     <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
   </item><item>
     <title>My Work</title>
@@ -23,48 +65,6 @@
     <guid>https://techsavvyash.dev/projects/</guid>
     <description>I started programming in 2020 during CoVID-19 quarantine lockdown right after I graduated high school and appeard for JEE.</description>
     <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>Veil</title>
-    <link>https://techsavvyash.dev/projects/Veil</link>
-    <guid>https://techsavvyash.dev/projects/Veil</guid>
-    <description>Veil is a modded caddy module that.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>StylusDB</title>
-    <link>https://techsavvyash.dev/projects/Stylus</link>
-    <guid>https://techsavvyash.dev/projects/Stylus</guid>
-    <description></description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>Verifiable Credentials</title>
-    <link>https://techsavvyash.dev/projects/RCW</link>
-    <guid>https://techsavvyash.dev/projects/RCW</guid>
-    <description>Project Description for RCW</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>Beckn</title>
-    <link>https://techsavvyash.dev/projects/Beckn</link>
-    <guid>https://techsavvyash.dev/projects/Beckn</guid>
-    <description></description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>OIDC Lite</title>
-    <link>https://techsavvyash.dev/projects/OIDC</link>
-    <guid>https://techsavvyash.dev/projects/OIDC</guid>
-    <description></description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
-  </item><item>
-    <title>Blogs</title>
-    <link>https://techsavvyash.dev/blogs/</link>
-    <guid>https://techsavvyash.dev/blogs/</guid>
-    <description>Nothing here yet! Hopefully I start writing soon.</description>
-    <pubDate>Sat, 17 May 2025 18:29:53 GMT</pubDate>
-  </item><item>
-    <title>~/techsavvyash</title>
-    <link>https://techsavvyash.dev/</link>
-    <guid>https://techsavvyash.dev/</guid>
-    <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
-    <pubDate>Sat, 17 May 2025 17:11:30 GMT</pubDate>
   </item>
     </channel>
   </rss>

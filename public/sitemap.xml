@@ -1,24 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://techsavvyash.dev/</loc>
-    <lastmod>2025-05-17T17:11:30.000Z</lastmod>
+    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
   </url><url>
     <loc>https://techsavvyash.dev/blogs/</loc>
-    <lastmod>2025-05-17T18:29:53.288Z</lastmod>
+    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
   </url><url>
     <loc>https://techsavvyash.dev/projects/BSAI</loc>
-    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
-  </url><url>
-    <loc>https://techsavvyash.dev/projects/</loc>
-    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
-  </url><url>
-    <loc>https://techsavvyash.dev/projects/Veil</loc>
-    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
-  </url><url>
-    <loc>https://techsavvyash.dev/projects/Stylus</loc>
-    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
-  </url><url>
-    <loc>https://techsavvyash.dev/projects/RCW</loc>
-    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
+    <lastmod>2025-05-17T19:29:59.000Z</lastmod>
   </url><url>
     <loc>https://techsavvyash.dev/projects/Beckn</loc>
     <lastmod>2025-05-17T19:19:50.000Z</lastmod>
@@ -26,6 +14,18 @@
     <loc>https://techsavvyash.dev/projects/OIDC</loc>
     <lastmod>2025-05-17T19:19:50.000Z</lastmod>
   </url><url>
+    <loc>https://techsavvyash.dev/projects/RCW</loc>
+    <lastmod>2025-05-17T19:29:59.000Z</lastmod>
+  </url><url>
     <loc>https://techsavvyash.dev/projects/Stencil</loc>
-    <lastmod>2025-05-17T19:24:18.104Z</lastmod>
+    <lastmod>2025-05-17T19:29:59.000Z</lastmod>
+  </url><url>
+    <loc>https://techsavvyash.dev/projects/Stylus</loc>
+    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
+  </url><url>
+    <loc>https://techsavvyash.dev/projects/Veil</loc>
+    <lastmod>2025-05-17T19:29:59.000Z</lastmod>
+  </url><url>
+    <loc>https://techsavvyash.dev/projects/</loc>
+    <lastmod>2025-05-17T19:19:50.000Z</lastmod>
   </url></urlset>
