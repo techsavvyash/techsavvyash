@@ -6,65 +6,65 @@
       <description>Last 10 notes on Yash Mittal</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Bharat Sah&#039;AI&#039;yak</title>
-    <link>https://techsavvyash.dev/projects/BSAI</link>
-    <guid>https://techsavvyash.dev/projects/BSAI</guid>
-    <description>Bharat Sah’AI’yak or BSAI is a AI enabled compute platform aimed to be flexible enough to serve a varied variety of usecases from building RAG based chatbots (like AKAI, KMAI, MahaKumbh bot etc.</description>
-    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+    <title>Promises</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/promises</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/promises</guid>
+    <description> Think of programs as “chunks” - one of these chunks execute “right now” and others execute “later”.</description>
+    <pubDate>Sun, 18 May 2025 13:37:11 GMT</pubDate>
   </item><item>
-    <title>Verifiable Credentials</title>
-    <link>https://techsavvyash.dev/projects/RCW</link>
-    <guid>https://techsavvyash.dev/projects/RCW</guid>
-    <description>Project Description for RCW</description>
-    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+    <title>this and Object.prototype</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/this-and-prototypes</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/this-and-prototypes</guid>
+    <description> default binding cares about the “strict” mode of the function and all other care about the “strict” mode of the call-site (boom boom moment) .</description>
+    <pubDate>Sun, 18 May 2025 13:36:36 GMT</pubDate>
   </item><item>
-    <title>Stencil</title>
-    <link>https://techsavvyash.dev/projects/Stencil</link>
-    <guid>https://techsavvyash.dev/projects/Stencil</guid>
-    <description>Stencil is yet another JavaScript framework built on top of NestJS which is another backend JavaScript framework inspired by AngularJS.</description>
-    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+    <title>Reading List</title>
+    <link>https://techsavvyash.dev/grimoire/reading-list</link>
+    <guid>https://techsavvyash.dev/grimoire/reading-list</guid>
+    <description>List of the books, research papers, articles, blogs etc. that I have read or plan on reading.</description>
+    <pubDate>Sun, 18 May 2025 13:34:44 GMT</pubDate>
   </item><item>
-    <title>Veil</title>
-    <link>https://techsavvyash.dev/projects/Veil</link>
-    <guid>https://techsavvyash.dev/projects/Veil</guid>
-    <description>Veil is a modded caddy fork which gives API paywalls as a built in feature to the caddy webserver running in a reverse proxy mode.</description>
-    <pubDate>Sat, 17 May 2025 19:29:59 GMT</pubDate>
+    <title>YDKJSY</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/</guid>
+    <description>Notes from the awesome book series You Don’t Know JS Yet by Kyle Simpson.</description>
+    <pubDate>Sun, 18 May 2025 13:33:55 GMT</pubDate>
   </item><item>
-    <title>~/techsavvyash</title>
-    <link>https://techsavvyash.dev/</link>
-    <guid>https://techsavvyash.dev/</guid>
-    <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>Go - Programming Language</title>
+    <link>https://techsavvyash.dev/grimoire/go/go-prog-lang</link>
+    <guid>https://techsavvyash.dev/grimoire/go/go-prog-lang</guid>
+    <description>Chapter 1 go has no notion of enclosing conditions in ( the built in function make can be used to create a new map The order of map iteration in go is random varying from program run to run The map is actually a reference to a data-structure created by make ReadFile returns a byte slice http.</description>
+    <pubDate>Sun, 18 May 2025 13:30:39 GMT</pubDate>
   </item><item>
-    <title>Blogs</title>
-    <link>https://techsavvyash.dev/blogs/</link>
-    <guid>https://techsavvyash.dev/blogs/</guid>
-    <description>I haven’t been able to finish any of the blogs yet, but some of the ones I am currently working on are listed below, will keep publishing them as I find them to be in a readable state.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>Go</title>
+    <link>https://techsavvyash.dev/grimoire/go/</link>
+    <guid>https://techsavvyash.dev/grimoire/go/</guid>
+    <description>Notes from my knowledge of the go programming language.</description>
+    <pubDate>Sun, 18 May 2025 13:29:22 GMT</pubDate>
   </item><item>
-    <title>Beckn</title>
-    <link>https://techsavvyash.dev/projects/Beckn</link>
-    <guid>https://techsavvyash.dev/projects/Beckn</guid>
-    <description>Beckn is a universal resource discovery and transaction protocol that enables the leap to open, decentralized, and interoperable peer-to-peer networks.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>6 - Partitioning</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/6</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/6</guid>
+    <description> shared-memory architecture share-disk architecture shared-nothing architecture — horizontal scaling or scaling out .</description>
+    <pubDate>Sun, 18 May 2025 13:28:26 GMT</pubDate>
   </item><item>
-    <title>OIDC Lite</title>
-    <link>https://techsavvyash.dev/projects/OIDC</link>
-    <guid>https://techsavvyash.dev/projects/OIDC</guid>
-    <description>OIDC Lite is a project I built with my college friends Debatreya, Utkarsh &amp; Ashutosh to learn more about the OIDC protocol and also because we wanted a lighter alternative to FusionAuth and KeyCloak which are great feature rich projects but for most usecases we don’t need those features and whil...</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>3 - Storage &amp; Retrieval</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/3</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/3</guid>
+    <description> Sorted String Tables (SSTables) Maintaining sorted order of data is simpler in memory, we can use any balanced tree (Red-Black, AVL etc.) which will allow us to insert the data in any order but read it back in a sorted order always.</description>
+    <pubDate>Sun, 18 May 2025 13:25:42 GMT</pubDate>
   </item><item>
-    <title>StylusDB</title>
-    <link>https://techsavvyash.dev/projects/Stylus</link>
-    <guid>https://techsavvyash.dev/projects/Stylus</guid>
-    <description>StylusDB is a collection (presently 2 but there will be more) of toy databases built by me and Chakshu Gautam while trying to tinker around and learn the database internals.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>DDIA</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/</guid>
+    <description>Notes from the book Designing Data Intensive Applications by Martin Kleppmann.</description>
+    <pubDate>Sun, 18 May 2025 13:22:14 GMT</pubDate>
   </item><item>
-    <title>My Work</title>
-    <link>https://techsavvyash.dev/projects/</link>
-    <guid>https://techsavvyash.dev/projects/</guid>
-    <description>I started programming in 2020 during CoVID-19 quarantine lockdown right after I graduated high school and appeard for JEE.</description>
-    <pubDate>Sat, 17 May 2025 19:19:50 GMT</pubDate>
+    <title>Grimoire</title>
+    <link>https://techsavvyash.dev/grimoire/</link>
+    <guid>https://techsavvyash.dev/grimoire/</guid>
+    <description>Welcome to my Grimoire. I find programming and software engineering to be wizardy hence the name of my vault for notes is Grimoire.</description>
+    <pubDate>Sun, 18 May 2025 12:52:56 GMT</pubDate>
   </item>
     </channel>
   </rss>
