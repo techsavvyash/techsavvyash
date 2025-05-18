@@ -1,1 +1,1 @@
-![techsavvyash's logo](./README.svg)
+![techsavvyash](./README.svg)

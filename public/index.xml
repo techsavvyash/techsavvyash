@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Yash Mittal</title>
+      <link>https://techsavvyash.dev</link>
+      <description>Last 10 notes on Yash Mittal</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Promises</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/promises</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/promises</guid>
+    <description> Think of programs as “chunks” - one of these chunks execute “right now” and others execute “later”.</description>
+    <pubDate>Sun, 18 May 2025 13:37:11 GMT</pubDate>
+  </item><item>
+    <title>this and Object.prototype</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/this-and-prototypes</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/this-and-prototypes</guid>
+    <description> default binding cares about the “strict” mode of the function and all other care about the “strict” mode of the call-site (boom boom moment) .</description>
+    <pubDate>Sun, 18 May 2025 13:36:36 GMT</pubDate>
+  </item><item>
+    <title>Reading List</title>
+    <link>https://techsavvyash.dev/grimoire/reading-list</link>
+    <guid>https://techsavvyash.dev/grimoire/reading-list</guid>
+    <description>List of the books, research papers, articles, blogs etc. that I have read or plan on reading.</description>
+    <pubDate>Sun, 18 May 2025 13:34:44 GMT</pubDate>
+  </item><item>
+    <title>YDKJSY</title>
+    <link>https://techsavvyash.dev/grimoire/ydkjsy/</link>
+    <guid>https://techsavvyash.dev/grimoire/ydkjsy/</guid>
+    <description>Notes from the awesome book series You Don’t Know JS Yet by Kyle Simpson.</description>
+    <pubDate>Sun, 18 May 2025 13:33:55 GMT</pubDate>
+  </item><item>
+    <title>Go - Programming Language</title>
+    <link>https://techsavvyash.dev/grimoire/go/go-prog-lang</link>
+    <guid>https://techsavvyash.dev/grimoire/go/go-prog-lang</guid>
+    <description>Chapter 1 go has no notion of enclosing conditions in ( the built in function make can be used to create a new map The order of map iteration in go is random varying from program run to run The map is actually a reference to a data-structure created by make ReadFile returns a byte slice http.</description>
+    <pubDate>Sun, 18 May 2025 13:30:39 GMT</pubDate>
+  </item><item>
+    <title>Go</title>
+    <link>https://techsavvyash.dev/grimoire/go/</link>
+    <guid>https://techsavvyash.dev/grimoire/go/</guid>
+    <description>Notes from my knowledge of the go programming language.</description>
+    <pubDate>Sun, 18 May 2025 13:29:22 GMT</pubDate>
+  </item><item>
+    <title>6 - Partitioning</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/6</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/6</guid>
+    <description> shared-memory architecture share-disk architecture shared-nothing architecture — horizontal scaling or scaling out .</description>
+    <pubDate>Sun, 18 May 2025 13:28:26 GMT</pubDate>
+  </item><item>
+    <title>3 - Storage &amp; Retrieval</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/3</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/3</guid>
+    <description> Sorted String Tables (SSTables) Maintaining sorted order of data is simpler in memory, we can use any balanced tree (Red-Black, AVL etc.) which will allow us to insert the data in any order but read it back in a sorted order always.</description>
+    <pubDate>Sun, 18 May 2025 13:25:42 GMT</pubDate>
+  </item><item>
+    <title>DDIA</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/</guid>
+    <description>Notes from the book Designing Data Intensive Applications by Martin Kleppmann.</description>
+    <pubDate>Sun, 18 May 2025 13:22:14 GMT</pubDate>
+  </item><item>
+    <title>Grimoire</title>
+    <link>https://techsavvyash.dev/grimoire/</link>
+    <guid>https://techsavvyash.dev/grimoire/</guid>
+    <description>Welcome to my Grimoire. I find programming and software engineering to be wizardy hence the name of my vault for notes is Grimoire.</description>
+    <pubDate>Sun, 18 May 2025 12:52:56 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

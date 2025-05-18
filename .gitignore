@@ -17,3 +17,12 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
