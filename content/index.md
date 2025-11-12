@@ -1,5 +1,12 @@
 ---
 title: ~/techsavvyash
+keywords:
+  - software engineer
+  - distributed systems
+  - databases
+  - open source
+  - AI
+  - full-stack developer
 ---
 
 I'm a software engineer trying to build systems which make people's lives easier. I have 3 years of experience working on production systems for a couple of Indian states helping the under privileged strata of the population thanks to the amazing opportunities and problems I got to work on during my time at [Samagra](https://samagragovernance.in/). Presently, I ship code at [Zomato](https://zomato.com) trying to simplify the lives of merchants on the platform.

@@ -36,6 +36,98 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    // Keywords support
+    const keywords = fileData.frontmatter?.keywords
+      ? Array.isArray(fileData.frontmatter.keywords)
+        ? fileData.frontmatter.keywords.join(", ")
+        : fileData.frontmatter.keywords
+      : undefined
+
+    // JSON-LD Structured Data
+    const generateJsonLd = () => {
+      const schemas: any[] = []
+
+      // Website Schema
+      schemas.push({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: cfg.pageTitle,
+        url: `https://${cfg.baseUrl}`,
+        description: description,
+      })
+
+      // Person Schema (for homepage/about)
+      if (fileData.slug === "index" || fileData.slug === "about") {
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: cfg.pageTitle,
+          url: `https://${cfg.baseUrl}`,
+          description: description,
+        })
+      }
+
+      // Article Schema (for content pages)
+      if (fileData.slug !== "index" && fileData.slug !== "404") {
+        const articleSchema: any = {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: title,
+          description: description,
+          url: socialUrl,
+          author: {
+            "@type": "Person",
+            name: cfg.pageTitle,
+          },
+        }
+
+        if (fileData.dates?.created) {
+          articleSchema.datePublished = new Date(fileData.dates.created).toISOString()
+        }
+        if (fileData.dates?.modified) {
+          articleSchema.dateModified = new Date(fileData.dates.modified).toISOString()
+        }
+
+        schemas.push(articleSchema)
+      }
+
+      // BreadcrumbList Schema
+      if (fileData.slug && fileData.slug !== "index" && fileData.slug !== "404") {
+        const pathSegments = fileData.slug.split("/").filter(Boolean)
+        const breadcrumbItems = [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `https://${cfg.baseUrl}`,
+          },
+        ]
+
+        let currentPath = ""
+        pathSegments.forEach((segment, index) => {
+          currentPath += `/${segment}`
+          breadcrumbItems.push({
+            "@type": "ListItem",
+            position: index + 2,
+            name: segment.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase()),
+            item: `https://${cfg.baseUrl}${currentPath}`,
+          })
+        })
+
+        if (breadcrumbItems.length > 1) {
+          schemas.push({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: breadcrumbItems,
+          })
+        }
+      }
+
+      return schemas
+    }
+
+    const jsonLdSchemas = generateJsonLd()
+
     return (
       <head>
         <title>{title}</title>
@@ -85,6 +177,16 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        {keywords && <meta name="keywords" content={keywords} />}
+
+        {/* JSON-LD Structured Data */}
+        {jsonLdSchemas.map((schema, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
