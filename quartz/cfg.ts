@@ -42,6 +42,9 @@ export type Analytics =
       provider: "clarity"
       projectId?: string
     }
+  | {
+      provider: "vercel"
+    }
 
 export interface GlobalConfiguration {
   pageTitle: string
