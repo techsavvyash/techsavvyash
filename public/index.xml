@@ -10,61 +10,61 @@
     <link>https://techsavvyash.dev/blogs/2025-building-with-ai</link>
     <guid>https://techsavvyash.dev/blogs/2025-building-with-ai</guid>
     <description>It’s 2026, and we are just seeing the top-level effects of AI unfold.</description>
-    <pubDate>Sat, 24 Jan 2026 08:44:19 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>Blogs</title>
     <link>https://techsavvyash.dev/blogs/</link>
     <guid>https://techsavvyash.dev/blogs/</guid>
     <description>I have been trying to get into the habit of writing for a while now and after experimenting with the journalling for a while, I think it’s time for me to start sharing my thoughts over here, just so I can document my journey as it’s still just the start of it.</description>
-    <pubDate>Sat, 24 Jan 2026 08:44:19 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
-    <title>~/techsavvyash</title>
-    <link>https://techsavvyash.dev/</link>
-    <guid>https://techsavvyash.dev/</guid>
-    <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
-    <pubDate>Sun, 18 May 2025 14:38:15 GMT</pubDate>
+    <title>10</title>
+    <link>https://techsavvyash.dev/grimoire/ampp/10</link>
+    <guid>https://techsavvyash.dev/grimoire/ampp/10</guid>
+    <description>Queues, memory management and the ABA problem Pools A pool is similar to a Set with the following two distinctions: might not have a contains() method for testing membership allows duplicate elements Pools usually act as buffers in producer&lt;&gt;consumer systems.</description>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
+  </item><item>
+    <title>AMPP</title>
+    <link>https://techsavvyash.dev/grimoire/ampp/</link>
+    <guid>https://techsavvyash.dev/grimoire/ampp/</guid>
+    <description>Notes from the book The Art of Multi Processor Programming.</description>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>3 - Storage &amp; Retrieval</title>
     <link>https://techsavvyash.dev/grimoire/ddia/3</link>
     <guid>https://techsavvyash.dev/grimoire/ddia/3</guid>
     <description> Sorted String Tables (SSTables) Maintaining sorted order of data is simpler in memory, we can use any balanced tree (Red-Black, AVL etc.) which will allow us to insert the data in any order but read it back in a sorted order always.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>6 - Partitioning</title>
     <link>https://techsavvyash.dev/grimoire/ddia/6</link>
     <guid>https://techsavvyash.dev/grimoire/ddia/6</guid>
     <description> shared-memory architecture share-disk architecture shared-nothing architecture — horizontal scaling or scaling out .</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>DDIA</title>
     <link>https://techsavvyash.dev/grimoire/ddia/</link>
     <guid>https://techsavvyash.dev/grimoire/ddia/</guid>
     <description>Notes from the book Designing Data Intensive Applications by Martin Kleppmann.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>Go - Programming Language</title>
     <link>https://techsavvyash.dev/grimoire/go/go-prog-lang</link>
     <guid>https://techsavvyash.dev/grimoire/go/go-prog-lang</guid>
     <description>Chapter 1 go has no notion of enclosing conditions in ( the built in function make can be used to create a new map The order of map iteration in go is random varying from program run to run The map is actually a reference to a data-structure created by make ReadFile returns a byte slice http.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>Go</title>
     <link>https://techsavvyash.dev/grimoire/go/</link>
     <guid>https://techsavvyash.dev/grimoire/go/</guid>
     <description>Notes from my knowledge of the go programming language.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item><item>
     <title>Grimoire</title>
     <link>https://techsavvyash.dev/grimoire/</link>
     <guid>https://techsavvyash.dev/grimoire/</guid>
     <description>Welcome to my Grimoire. I find programming and software engineering to be wizardy hence the name of my vault for notes is Grimoire.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>Reading List</title>
-    <link>https://techsavvyash.dev/grimoire/reading-list</link>
-    <guid>https://techsavvyash.dev/grimoire/reading-list</guid>
-    <description>List of the books, research papers, articles, blogs etc. that I have read or plan on reading.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 11:25:31 GMT</pubDate>
   </item>
     </channel>
   </rss>

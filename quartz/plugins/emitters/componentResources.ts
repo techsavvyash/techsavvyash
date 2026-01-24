@@ -202,11 +202,14 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       document.head.appendChild(clarityScript)
     `)
   } else if (cfg.analytics?.provider === "vercel") {
+    // Use the @vercel/analytics package for better integration
     componentResources.afterDOMLoaded.push(`
-      import("https://va.vercel-scripts.com/v2/script.js").then((module) => {
-        module.inject();
+      import("https://esm.sh/@vercel/analytics@1.6.1").then((module) => {
+        module.inject({ mode: 'production' });
         document.addEventListener('nav', () => {
-          module.track('pageview');
+          if (window.va) {
+            window.va('pageview');
+          }
         });
       });
     `)
