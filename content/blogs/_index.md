@@ -2,15 +2,9 @@
 title: Blogs
 ---
 
-I haven't been able to finish any of the blogs yet, but some of the ones I am currently working on are listed below, will keep publishing them as I find them to be in a readable state.
+I have been trying to get into the habit of writing for a while now and after experimenting with the journalling for a while, I think it's time for me to start sharing my thoughts over here, just so I can document my journey as it's still just the start of it.
 
-### Tech Blogs
+Posts mostly would revolve around what I think about technology, AI and whatever is on my mind.
 
-1. Writing a new custom caddy module from Scratch ft. Veil & Cursor 
-2. What is Beckn and how to adapt and use it?
-3. Diving deeper into Authentication and Authorization and IAM systems ft. OIDC Lite.
+*Disclaimer* All the thoughts presented in these blogs are personal and my own and they in no way represent my employers. It's a personal internet blog for me to share what **I** think.
 
-### Thoughts
-
-1. A year into full time software engineering jobs
-2. Learnings from building in the GovTech domain for the Indian people ft. Samagra
