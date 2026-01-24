@@ -201,6 +201,15 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       })(window, document, "clarity", "script", "${cfg.analytics.projectId}");\`
       document.head.appendChild(clarityScript)
     `)
+  } else if (cfg.analytics?.provider === "vercel") {
+    componentResources.afterDOMLoaded.push(`
+      import("https://va.vercel-scripts.com/v2/script.js").then((module) => {
+        module.inject();
+        document.addEventListener('nav', () => {
+          module.track('pageview');
+        });
+      });
+    `)
   }
 
   if (cfg.enableSPA) {

@@ -10,7 +10,13 @@
     <link>https://techsavvyash.dev/blogs/2025-building-with-ai</link>
     <guid>https://techsavvyash.dev/blogs/2025-building-with-ai</guid>
     <description>It’s 2026, and we are just seeing the top-level effects of AI unfold.</description>
-    <pubDate>Sat, 24 Jan 2026 08:34:01 GMT</pubDate>
+    <pubDate>Sat, 24 Jan 2026 08:44:19 GMT</pubDate>
+  </item><item>
+    <title>Blogs</title>
+    <link>https://techsavvyash.dev/blogs/</link>
+    <guid>https://techsavvyash.dev/blogs/</guid>
+    <description>I have been trying to get into the habit of writing for a while now and after experimenting with the journalling for a while, I think it’s time for me to start sharing my thoughts over here, just so I can document my journey as it’s still just the start of it.</description>
+    <pubDate>Sat, 24 Jan 2026 08:44:19 GMT</pubDate>
   </item><item>
     <title>~/techsavvyash</title>
     <link>https://techsavvyash.dev/</link>
@@ -18,10 +24,34 @@
     <description>I’m a software engineer trying to build systems which make people’s lives easier.</description>
     <pubDate>Sun, 18 May 2025 14:38:15 GMT</pubDate>
   </item><item>
-    <title>Blogs</title>
-    <link>https://techsavvyash.dev/blogs/</link>
-    <guid>https://techsavvyash.dev/blogs/</guid>
-    <description>I have been trying to get into the habit of writing for a while now and after experimenting with the journalling for a while, I think it’s time for me to start sharing my thoughts over here, just so I can document my journey as it’s still just the start of it.</description>
+    <title>3 - Storage &amp; Retrieval</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/3</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/3</guid>
+    <description> Sorted String Tables (SSTables) Maintaining sorted order of data is simpler in memory, we can use any balanced tree (Red-Black, AVL etc.) which will allow us to insert the data in any order but read it back in a sorted order always.</description>
+    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+  </item><item>
+    <title>6 - Partitioning</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/6</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/6</guid>
+    <description> shared-memory architecture share-disk architecture shared-nothing architecture — horizontal scaling or scaling out .</description>
+    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+  </item><item>
+    <title>DDIA</title>
+    <link>https://techsavvyash.dev/grimoire/ddia/</link>
+    <guid>https://techsavvyash.dev/grimoire/ddia/</guid>
+    <description>Notes from the book Designing Data Intensive Applications by Martin Kleppmann.</description>
+    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+  </item><item>
+    <title>Go - Programming Language</title>
+    <link>https://techsavvyash.dev/grimoire/go/go-prog-lang</link>
+    <guid>https://techsavvyash.dev/grimoire/go/go-prog-lang</guid>
+    <description>Chapter 1 go has no notion of enclosing conditions in ( the built in function make can be used to create a new map The order of map iteration in go is random varying from program run to run The map is actually a reference to a data-structure created by make ReadFile returns a byte slice http.</description>
+    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
+  </item><item>
+    <title>Go</title>
+    <link>https://techsavvyash.dev/grimoire/go/</link>
+    <guid>https://techsavvyash.dev/grimoire/go/</guid>
+    <description>Notes from my knowledge of the go programming language.</description>
     <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
   </item><item>
     <title>Grimoire</title>
@@ -34,36 +64,6 @@
     <link>https://techsavvyash.dev/grimoire/reading-list</link>
     <guid>https://techsavvyash.dev/grimoire/reading-list</guid>
     <description>List of the books, research papers, articles, blogs etc. that I have read or plan on reading.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>Bharat Sah&#039;AI&#039;yak</title>
-    <link>https://techsavvyash.dev/projects/BSAI</link>
-    <guid>https://techsavvyash.dev/projects/BSAI</guid>
-    <description>Bharat Sah’AI’yak or BSAI is a AI enabled compute platform aimed to be flexible enough to serve a varied variety of usecases from building RAG based chatbots (like AKAI, KMAI, MahaKumbh bot etc.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>Beckn</title>
-    <link>https://techsavvyash.dev/projects/Beckn</link>
-    <guid>https://techsavvyash.dev/projects/Beckn</guid>
-    <description>Beckn is a universal resource discovery and transaction protocol that enables the leap to open, decentralized, and interoperable peer-to-peer networks.</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>OIDC Lite</title>
-    <link>https://techsavvyash.dev/projects/OIDC</link>
-    <guid>https://techsavvyash.dev/projects/OIDC</guid>
-    <description>OIDC Lite is a project I built with my college friends Debatreya, Utkarsh &amp; Ashutosh to learn more about the OIDC protocol and also because we wanted a lighter alternative to FusionAuth and KeyCloak which are great feature rich projects but for most usecases we don’t need those features and whil...</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>Verifiable Credentials</title>
-    <link>https://techsavvyash.dev/projects/RCW</link>
-    <guid>https://techsavvyash.dev/projects/RCW</guid>
-    <description>Project Description for RCW</description>
-    <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
-  </item><item>
-    <title>Stencil</title>
-    <link>https://techsavvyash.dev/projects/Stencil</link>
-    <guid>https://techsavvyash.dev/projects/Stencil</guid>
-    <description>Stencil is yet another JavaScript framework built on top of NestJS which is another backend JavaScript framework inspired by AngularJS.</description>
     <pubDate>Sun, 18 May 2025 13:42:22 GMT</pubDate>
   </item>
     </channel>
