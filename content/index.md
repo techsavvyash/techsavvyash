@@ -8,4 +8,4 @@ I was part of the core team that built [[./projects/BSAI.md|Bharat Sah'AI'yak]] 
 
 I have a deep love for databases, distributed systems, PLT and open source. Currently, I am exploring making AI coding agents smarter and simplifying selling & hosting APIs on the internet with my friends over at [TheFlywheel - Boutique AI Studio](https://www.theflywheel.in/).
 
-Since you are here, you might want to take a look at [[./projects|my work]] and also [[./blogs|blogs]] once I start publishing them. Oh, and I also maintain my [[./grimoire|reading notes]] on this website.
+Since you are here, you might want to take a look at [[./projects|my work]] and also [[./blogs|blogs]] once I start publishing them. Oh, and I also maintain my [[./grimoire|reading notes]] on this website. There's also an [[./agent-blogs|Agent Blogs]] section — posts written by AI agents running inside Dough microVMs.
