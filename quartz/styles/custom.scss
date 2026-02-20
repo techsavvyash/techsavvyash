@@ -1,3 +1,337 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Notebook Theme - Custom CSS
+// Creates a handwritten notebook aesthetic with paper texture, margins, and organic feel
+
+// Paper texture and notebook background
+body {
+  background: linear-gradient(to bottom, #f9f7f1 0%, #ede8da 100%);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    z-index: -1;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.02) 2px,
+        rgba(0, 0, 0, 0.02) 4px
+      );
+    pointer-events: none;
+  }
+}
+
+// Main content area with notebook paper effect
+.page > #quartz-body .center > article {
+  background: #fffef9;
+  background-image:
+    // Left margin line (red vertical line like in notebooks)
+    linear-gradient(to right,
+      transparent 0,
+      transparent 2.5rem,
+      #e8b4b8 2.5rem,
+      #e8b4b8 calc(2.5rem + 2px),
+      transparent calc(2.5rem + 2px)
+    ),
+    // Horizontal ruled lines
+    repeating-linear-gradient(
+      transparent,
+      transparent 1.55rem,
+      #e8dcc8 1.55rem,
+      #e8dcc8 calc(1.55rem + 1px)
+    );
+  padding: 3rem 3rem 3rem 4rem !important;
+  margin: 2rem 0;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    // Slight edge shadow for depth
+    inset -1px 0 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  border: 1px solid #e8dcc8;
+  position: relative;
+
+  // Add slight paper curl effect at corners
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.05) 50%);
+    border-radius: 0 0 3px 0;
+  }
+
+  @media (max-width: 800px) {
+    padding: 2rem 1.5rem 2rem 3rem !important;
+    background-image:
+      linear-gradient(to right,
+        transparent 0,
+        transparent 1.5rem,
+        #e8b4b8 1.5rem,
+        #e8b4b8 calc(1.5rem + 2px),
+        transparent calc(1.5rem + 2px)
+      ),
+      repeating-linear-gradient(
+        transparent,
+        transparent 1.55rem,
+        #e8dcc8 1.55rem,
+        #e8dcc8 calc(1.55rem + 1px)
+      );
+  }
+}
+
+// Sidebar notebook styling
+.page > #quartz-body .sidebar {
+  background: rgba(255, 254, 249, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid rgba(232, 220, 200, 0.5);
+
+  &.left {
+    // Add spiral binding effect
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 2rem;
+      bottom: 2rem;
+      width: 10px;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          transparent,
+          transparent 20px,
+          #999 20px,
+          #999 25px,
+          transparent 25px,
+          transparent 30px
+        );
+      border-radius: 2px;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Handwritten-style headings with slight rotation and organic feel
+.page > #quartz-body .center > article {
+  h1, h2, h3 {
+    font-family: 'Caveat', 'Patrick Hand', cursive, var(--headerFont);
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(to right,
+        transparent 0%,
+        #f4a261 20%,
+        #e76f51 50%,
+        #f4a261 80%,
+        transparent 100%
+      );
+      opacity: 0.4;
+      transform: scaleX(1.02);
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    transform: rotate(-0.5deg);
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    transform: rotate(0.3deg);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    transform: rotate(-0.2deg);
+  }
+}
+
+// Sketch-style links with hand-drawn underline
+.page > #quartz-body .center > article a.internal {
+  background: transparent;
+  padding: 0;
+  border-bottom: 2px solid #e76f51;
+  border-radius: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    height: 2px;
+    background: #e76f51;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+// Sticky note style for callouts and blockquotes
+.page > #quartz-body .center > article blockquote {
+  background: #fffacd;
+  border-left: none;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transform: rotate(0.5deg);
+  position: relative;
+  border-top: 20px solid #f4e4a6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 10px;
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Code blocks with notebook paper style
+.page > #quartz-body .center > article pre {
+  background: #f8f8f8;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+// Hand-drawn style for checkboxes
+.page > #quartz-body .center > article input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+
+  &:checked {
+    background: #fff;
+    border-color: #e76f51;
+
+    &::after {
+      content: "✓";
+      position: absolute;
+      top: -3px;
+      left: 1px;
+      font-size: 18px;
+      color: #e76f51;
+      font-weight: bold;
+      font-family: 'Caveat', cursive;
+    }
+  }
+}
+
+// Scrapbook-style images
+.page > #quartz-body .center > article img {
+  border: 8px solid #fff;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05);
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  &:nth-child(even) {
+    transform: rotate(1deg);
+  }
+}
+
+// Tag styling - washi tape effect
+.page > #quartz-body .center > article .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+
+  a {
+    background: #e8f4f8;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 3px,
+        rgba(255, 255, 255, 0.3) 3px,
+        rgba(255, 255, 255, 0.3) 6px
+      );
+    }
+  }
+}
+
+// Search bar with notebook styling
+.search input[type="text"] {
+  background: #fffef9;
+  border: 2px solid #e8dcc8;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-family: 'Caveat', var(--bodyFont);
+  font-size: 1.1rem;
+
+  &:focus {
+    outline: none;
+    border-color: #e76f51;
+    box-shadow: 0 0 0 3px rgba(231, 111, 81, 0.1);
+  }
+}
+
+// Explorer (file tree) with hand-drawn folder icons
+.explorer {
+  .folder-icon::before {
+    filter: hue-rotate(20deg) saturate(0.8);
+  }
+}

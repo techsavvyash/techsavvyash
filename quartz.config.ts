@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Caveat", // Handwritten-style font for headers
+        body: "Merriweather", // Classic, readable serif font for notebook feel
+        code: "Courier Prime", // Typewriter-style monospace font
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#fffef9", // Warm paper white
+          lightgray: "#e8dcc8", // Soft beige for ruled lines
+          gray: "#b8a894", // Muted brown-gray
+          darkgray: "#5a4a3a", // Warm dark gray (ink color)
+          dark: "#2c3e50", // Deep blue-black (like pen ink)
+          secondary: "#e76f51", // Warm coral-orange (highlighter)
+          tertiary: "#f4a261", // Soft orange (accent)
+          highlight: "rgba(244, 162, 97, 0.15)", // Soft orange highlight
+          textHighlight: "#fffacd88", // Yellow highlighter effect
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1a1a1a", // Dark notebook cover
+          lightgray: "#3a3a3a", // Dark ruled lines
+          gray: "#6a6a6a", // Medium gray
+          darkgray: "#d4c5b0", // Cream text
+          dark: "#f5f5dc", // Beige text (like cream paper)
+          secondary: "#e76f51", // Keep warm coral
+          tertiary: "#f4a261", // Keep soft orange
+          highlight: "rgba(244, 162, 97, 0.15)",
+          textHighlight: "#fffacd44", // Dimmed highlighter for dark mode
         },
       },
     },
