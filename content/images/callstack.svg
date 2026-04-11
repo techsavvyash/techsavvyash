@@ -1,0 +1,75 @@
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instruction set and system calls: traditional vs agentic call stack">
+  <style>
+    .lbl  { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 500; }
+    .sub  { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .col-hd { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; fill: #111827; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- divider + headers -->
+  <line x1="340" y1="16" x2="340" y2="386" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="4 4"/>
+  <text class="col-hd" x="175" y="30" text-anchor="middle">Traditional</text>
+  <text class="col-hd" x="505" y="30" text-anchor="middle">Agentic</text>
+
+  <!-- ── LEFT ── -->
+  <rect x="80" y="48" width="190" height="40" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0.5"/>
+  <text class="lbl" x="175" y="64" text-anchor="middle" dominant-baseline="central" fill="#111827">Application</text>
+  <text class="sub" x="175" y="80" text-anchor="middle" dominant-baseline="central" fill="#6b7280">calls system functions</text>
+  <line x1="175" y1="90" x2="175" y2="112" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="80" y="116" width="190" height="40" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="0.5"/>
+  <text class="lbl" x="175" y="132" text-anchor="middle" dominant-baseline="central" fill="#78350f">System calls</text>
+  <text class="sub" x="175" y="148" text-anchor="middle" dominant-baseline="central" fill="#b45309">read(), write(), fork()</text>
+  <line x1="175" y1="158" x2="175" y2="178" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="80" y="182" width="190" height="40" rx="6" fill="#f0fdfa" stroke="#14b8a6" stroke-width="0.5"/>
+  <text class="lbl" x="175" y="198" text-anchor="middle" dominant-baseline="central" fill="#134e4a">OS kernel</text>
+  <text class="sub" x="175" y="214" text-anchor="middle" dominant-baseline="central" fill="#0f766e">routes instructions</text>
+  <line x1="175" y1="224" x2="175" y2="248" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- instruction set grid -->
+  <rect x="80"  y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="105" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">ADD</text>
+  <rect x="140" y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="165" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">SUB</text>
+  <rect x="200" y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="225" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">MOV</text>
+  <rect x="80"  y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="105" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">JMP</text>
+  <rect x="140" y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="165" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">LOAD</text>
+  <rect x="200" y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="225" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">CALL</text>
+  <line x1="175" y1="318" x2="175" y2="338" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="80" y="342" width="190" height="40" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="0.5"/>
+  <text class="lbl" x="175" y="358" text-anchor="middle" dominant-baseline="central" fill="#4c1d95">CPU</text>
+  <text class="sub" x="175" y="374" text-anchor="middle" dominant-baseline="central" fill="#6d28d9">processes bytes</text>
+
+  <!-- ── RIGHT ── -->
+  <rect x="420" y="48" width="190" height="40" rx="6" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0.5"/>
+  <text class="lbl" x="515" y="64" text-anchor="middle" dominant-baseline="central" fill="#111827">Task</text>
+  <text class="sub" x="515" y="80" text-anchor="middle" dominant-baseline="central" fill="#6b7280">calls tool functions</text>
+  <line x1="515" y1="90" x2="515" y2="112" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="420" y="116" width="190" height="40" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="0.5"/>
+  <text class="lbl" x="515" y="132" text-anchor="middle" dominant-baseline="central" fill="#78350f">Tool calls</text>
+  <text class="sub" x="515" y="148" text-anchor="middle" dominant-baseline="central" fill="#b45309">search(), write(), exec()</text>
+  <line x1="515" y1="158" x2="515" y2="178" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="420" y="182" width="190" height="40" rx="6" fill="#f0fdfa" stroke="#14b8a6" stroke-width="0.5"/>
+  <text class="lbl" x="515" y="198" text-anchor="middle" dominant-baseline="central" fill="#134e4a">Agent</text>
+  <text class="sub" x="515" y="214" text-anchor="middle" dominant-baseline="central" fill="#0f766e">routes tool calls</text>
+  <line x1="515" y1="224" x2="515" y2="248" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- tool set grid -->
+  <rect x="420" y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="445" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">search</text>
+  <rect x="480" y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="505" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">write</text>
+  <rect x="540" y="252" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="565" y="266" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">exec</text>
+  <rect x="420" y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="445" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">read</text>
+  <rect x="480" y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="505" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">query</text>
+  <rect x="540" y="288" width="50" height="28" rx="4" fill="#fff7ed" stroke="#fb923c" stroke-width="0.5"/><text class="sub" x="565" y="302" text-anchor="middle" dominant-baseline="central" fill="#7c2d12">fetch</text>
+  <line x1="515" y1="318" x2="515" y2="338" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="420" y="342" width="190" height="40" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="0.5"/>
+  <text class="lbl" x="515" y="358" text-anchor="middle" dominant-baseline="central" fill="#4c1d95">LLM</text>
+  <text class="sub" x="515" y="374" text-anchor="middle" dominant-baseline="central" fill="#6d28d9">processes tokens</text>
+</svg>

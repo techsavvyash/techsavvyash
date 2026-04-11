@@ -1,0 +1,35 @@
+<svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agentic stack as nested containment layers">
+  <style>
+    .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 500; }
+    .sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .ann { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; fill: #374151; }
+  </style>
+
+  <!-- Harness outer box -->
+  <rect x="40" y="50" width="420" height="280" rx="16" fill="#eff6ff" stroke="#60a5fa" stroke-width="0.5"/>
+  <text class="lbl" x="250" y="78" text-anchor="middle" fill="#1e3a8a">Harness</text>
+  <text class="sub" x="250" y="96" text-anchor="middle" fill="#1d4ed8">system prompt + tool configuration</text>
+
+  <!-- Agent middle box -->
+  <rect x="80" y="124" width="340" height="156" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="0.5"/>
+  <text class="lbl" x="250" y="148" text-anchor="middle" fill="#134e4a">Agent</text>
+  <text class="sub" x="250" y="165" text-anchor="middle" fill="#0f766e">LLM call loop + tool dispatch</text>
+
+  <!-- LLM inner box -->
+  <rect x="120" y="194" width="260" height="66" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="0.5"/>
+  <text class="lbl" x="250" y="220" text-anchor="middle" dominant-baseline="central" fill="#4c1d95">LLM</text>
+  <text class="sub" x="250" y="240" text-anchor="middle" dominant-baseline="central" fill="#6d28d9">token → token</text>
+
+  <!-- Right annotations -->
+  <line x1="460" y1="78" x2="478" y2="78" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <circle cx="460" cy="78" r="2" fill="#9ca3af"/>
+  <text class="ann" x="484" y="82">≡ operating system</text>
+
+  <line x1="420" y1="148" x2="478" y2="148" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <circle cx="420" cy="148" r="2" fill="#9ca3af"/>
+  <text class="ann" x="484" y="152">≡ OS kernel</text>
+
+  <line x1="380" y1="224" x2="478" y2="224" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <circle cx="380" cy="224" r="2" fill="#9ca3af"/>
+  <text class="ann" x="484" y="228">≡ CPU</text>
+</svg>

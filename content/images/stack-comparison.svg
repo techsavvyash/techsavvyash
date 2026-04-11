@@ -1,0 +1,45 @@
+<svg width="100%" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Traditional computing vs agentic ecosystem stack comparison">
+  <style>
+    .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 500; }
+    .sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .eq  { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 400; fill: #9ca3af; }
+    .col-hd { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; fill: #111827; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- column headers -->
+  <text class="col-hd" x="150" y="32" text-anchor="middle">Traditional computing</text>
+  <text class="col-hd" x="530" y="32" text-anchor="middle">Agentic ecosystem</text>
+  <line x1="40" y1="44" x2="640" y2="44" stroke="#e5e7eb" stroke-width="0.5"/>
+
+  <!-- row 1: CPU / LLM -->
+  <rect x="40" y="60" width="220" height="56" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="0.5"/>
+  <text class="lbl" x="150" y="83" text-anchor="middle" dominant-baseline="central" fill="#4c1d95">CPU</text>
+  <text class="sub" x="150" y="101" text-anchor="middle" dominant-baseline="central" fill="#6d28d9">bytes · deterministic</text>
+  <text class="eq" x="340" y="92" text-anchor="middle" dominant-baseline="central">≡</text>
+  <rect x="420" y="60" width="220" height="56" rx="6" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="0.5"/>
+  <text class="lbl" x="530" y="83" text-anchor="middle" dominant-baseline="central" fill="#4c1d95">LLM</text>
+  <text class="sub" x="530" y="101" text-anchor="middle" dominant-baseline="central" fill="#6d28d9">tokens · probabilistic</text>
+
+  <!-- row 2: Kernel / Agent -->
+  <rect x="40" y="136" width="220" height="56" rx="6" fill="#f0fdfa" stroke="#14b8a6" stroke-width="0.5"/>
+  <text class="lbl" x="150" y="159" text-anchor="middle" dominant-baseline="central" fill="#134e4a">OS kernel</text>
+  <text class="sub" x="150" y="177" text-anchor="middle" dominant-baseline="central" fill="#0f766e">orchestrates system calls</text>
+  <text class="eq" x="340" y="168" text-anchor="middle" dominant-baseline="central">≡</text>
+  <rect x="420" y="136" width="220" height="56" rx="6" fill="#f0fdfa" stroke="#14b8a6" stroke-width="0.5"/>
+  <text class="lbl" x="530" y="159" text-anchor="middle" dominant-baseline="central" fill="#134e4a">Agent</text>
+  <text class="sub" x="530" y="177" text-anchor="middle" dominant-baseline="central" fill="#0f766e">orchestrates tool calls</text>
+
+  <!-- row 3: OS / Harness -->
+  <rect x="40" y="212" width="220" height="56" rx="6" fill="#eff6ff" stroke="#60a5fa" stroke-width="0.5"/>
+  <text class="lbl" x="150" y="235" text-anchor="middle" dominant-baseline="central" fill="#1e3a8a">Operating system</text>
+  <text class="sub" x="150" y="253" text-anchor="middle" dominant-baseline="central" fill="#1d4ed8">system API surface</text>
+  <text class="eq" x="340" y="244" text-anchor="middle" dominant-baseline="central">≡</text>
+  <rect x="420" y="212" width="220" height="56" rx="6" fill="#eff6ff" stroke="#60a5fa" stroke-width="0.5"/>
+  <text class="lbl" x="530" y="235" text-anchor="middle" dominant-baseline="central" fill="#1e3a8a">Harness</text>
+  <text class="sub" x="530" y="253" text-anchor="middle" dominant-baseline="central" fill="#1d4ed8">agent API surface</text>
+</svg>
