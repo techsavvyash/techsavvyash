@@ -1,4 +1,4 @@
-<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instruction set and system calls: traditional vs agentic call stack">
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instruction set and system calls: traditional vs agentic call stack with animated flow">
   <style>
     svg {
       --fg: #111827;
@@ -65,6 +65,33 @@
     .lbl    { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; }
     .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
     .col-hd { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: var(--fg); }
+    .card, .chip, .hd, .divider {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: rise .7s ease forwards;
+    }
+    .flow {
+      stroke-dasharray: 10 10;
+      animation: rise .3s ease forwards, dash 3.5s linear infinite;
+    }
+    .d1 { animation-delay: .1s; }
+    .d2 { animation-delay: .3s; }
+    .d3 { animation-delay: .55s; }
+    .d4 { animation-delay: .8s; }
+    .d5 { animation-delay: 1.05s; }
+    .d6 { animation-delay: 1.3s; }
+    .d7 { animation-delay: 1.55s; }
+    .d8 { animation-delay: 1.8s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card, .chip, .hd, .divider, .flow { opacity: 1; transform: none; animation: none; }
+    }
   </style>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -73,65 +100,65 @@
   </defs>
 
   <!-- divider + headers -->
-  <line x1="340" y1="16" x2="340" y2="386" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4"/>
-  <text class="col-hd" x="175" y="30" text-anchor="middle">Traditional</text>
-  <text class="col-hd" x="505" y="30" text-anchor="middle">Agentic</text>
+  <line class="divider d1" x1="340" y1="16" x2="340" y2="386" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4"/>
+  <text class="col-hd hd d1" x="175" y="30" text-anchor="middle">Traditional</text>
+  <text class="col-hd hd d1" x="505" y="30" text-anchor="middle">Agentic</text>
 
   <!-- ── LEFT ── -->
-  <rect x="80" y="48" width="190" height="40" rx="6" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="175" y="64" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">Application</text>
-  <text class="sub" x="175" y="80" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">calls system functions</text>
-  <line x1="175" y1="90" x2="175" y2="112" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d2" x="80" y="48" width="190" height="40" rx="6" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d2" x="175" y="64" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">Application</text>
+  <text class="sub card d2" x="175" y="80" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">calls system functions</text>
+  <line class="flow d2" x1="175" y1="90" x2="175" y2="112" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="80" y="116" width="190" height="40" rx="6" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="175" y="132" text-anchor="middle" dominant-baseline="central" fill="var(--amber-text)">System calls</text>
-  <text class="sub" x="175" y="148" text-anchor="middle" dominant-baseline="central" fill="var(--amber-sub)">read(), write(), fork()</text>
-  <line x1="175" y1="158" x2="175" y2="178" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d3" x="80" y="116" width="190" height="40" rx="6" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d3" x="175" y="132" text-anchor="middle" dominant-baseline="central" fill="var(--amber-text)">System calls</text>
+  <text class="sub card d3" x="175" y="148" text-anchor="middle" dominant-baseline="central" fill="var(--amber-sub)">read(), write(), fork()</text>
+  <line class="flow d3" x1="175" y1="158" x2="175" y2="178" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="80" y="182" width="190" height="40" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="175" y="198" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">OS kernel</text>
-  <text class="sub" x="175" y="214" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes instructions</text>
-  <line x1="175" y1="224" x2="175" y2="248" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d4" x="80" y="182" width="190" height="40" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d4" x="175" y="198" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">OS kernel</text>
+  <text class="sub card d4" x="175" y="214" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes instructions</text>
+  <line class="flow d4" x1="175" y1="224" x2="175" y2="248" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- instruction set grid -->
-  <rect x="80"  y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="105" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">ADD</text>
-  <rect x="140" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="165" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">SUB</text>
-  <rect x="200" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="225" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">MOV</text>
-  <rect x="80"  y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="105" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">JMP</text>
-  <rect x="140" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="165" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">LOAD</text>
-  <rect x="200" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="225" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">CALL</text>
-  <line x1="175" y1="318" x2="175" y2="338" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="chip d5" x="80"  y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="105" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">ADD</text>
+  <rect class="chip d5" x="140" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="165" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">SUB</text>
+  <rect class="chip d5" x="200" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="225" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">MOV</text>
+  <rect class="chip d6" x="80"  y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="105" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">JMP</text>
+  <rect class="chip d6" x="140" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="165" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">LOAD</text>
+  <rect class="chip d6" x="200" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="225" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">CALL</text>
+  <line class="flow d6" x1="175" y1="318" x2="175" y2="338" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="80" y="342" width="190" height="40" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="175" y="358" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">CPU</text>
-  <text class="sub" x="175" y="374" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes bytes</text>
+  <rect class="card d7" x="80" y="342" width="190" height="40" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d7" x="175" y="358" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">CPU</text>
+  <text class="sub card d7" x="175" y="374" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes bytes</text>
 
   <!-- ── RIGHT ── -->
-  <rect x="420" y="48" width="190" height="40" rx="6" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="515" y="64" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">Task</text>
-  <text class="sub" x="515" y="80" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">calls tool functions</text>
-  <line x1="515" y1="90" x2="515" y2="112" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d2" x="420" y="48" width="190" height="40" rx="6" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d2" x="515" y="64" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">Task</text>
+  <text class="sub card d2" x="515" y="80" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">calls tool functions</text>
+  <line class="flow d2" x1="515" y1="90" x2="515" y2="112" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="420" y="116" width="190" height="40" rx="6" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="515" y="132" text-anchor="middle" dominant-baseline="central" fill="var(--amber-text)">Tool calls</text>
-  <text class="sub" x="515" y="148" text-anchor="middle" dominant-baseline="central" fill="var(--amber-sub)">search(), write(), exec()</text>
-  <line x1="515" y1="158" x2="515" y2="178" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d3" x="420" y="116" width="190" height="40" rx="6" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d3" x="515" y="132" text-anchor="middle" dominant-baseline="central" fill="var(--amber-text)">Tool calls</text>
+  <text class="sub card d3" x="515" y="148" text-anchor="middle" dominant-baseline="central" fill="var(--amber-sub)">search(), write(), exec()</text>
+  <line class="flow d3" x1="515" y1="158" x2="515" y2="178" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="420" y="182" width="190" height="40" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="515" y="198" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">Agent</text>
-  <text class="sub" x="515" y="214" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes tool calls</text>
-  <line x1="515" y1="224" x2="515" y2="248" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d4" x="420" y="182" width="190" height="40" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d4" x="515" y="198" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">Agent</text>
+  <text class="sub card d4" x="515" y="214" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes tool calls</text>
+  <line class="flow d4" x1="515" y1="224" x2="515" y2="248" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- tool set grid -->
-  <rect x="420" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="445" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">search</text>
-  <rect x="480" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="505" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">write</text>
-  <rect x="540" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="565" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">exec</text>
-  <rect x="420" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="445" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">read</text>
-  <rect x="480" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="505" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">query</text>
-  <rect x="540" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub" x="565" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">fetch</text>
-  <line x1="515" y1="318" x2="515" y2="338" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="chip d5" x="420" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="445" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">search</text>
+  <rect class="chip d5" x="480" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="505" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">write</text>
+  <rect class="chip d5" x="540" y="252" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d5" x="565" y="266" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">exec</text>
+  <rect class="chip d6" x="420" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="445" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">read</text>
+  <rect class="chip d6" x="480" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="505" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">query</text>
+  <rect class="chip d6" x="540" y="288" width="50" height="28" rx="4" fill="var(--orange-fill)" stroke="var(--orange-stroke)" stroke-width="1.5"/><text class="sub chip d6" x="565" y="302" text-anchor="middle" dominant-baseline="central" fill="var(--orange-text)">fetch</text>
+  <line class="flow d6" x1="515" y1="318" x2="515" y2="338" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="420" y="342" width="190" height="40" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
-  <text class="lbl" x="515" y="358" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">LLM</text>
-  <text class="sub" x="515" y="374" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes tokens</text>
+  <rect class="card d7" x="420" y="342" width="190" height="40" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d7" x="515" y="358" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">LLM</text>
+  <text class="sub card d7" x="515" y="374" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes tokens</text>
 </svg>
