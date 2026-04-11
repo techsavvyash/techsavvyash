@@ -1,0 +1,144 @@
+<svg width="100%" viewBox="0 0 680 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Transformation from traditional computing concepts to agentic equivalents with animated transitions">
+  <style>
+    svg {
+      --fg: #111827;
+      --muted: #6b7280;
+      --border: #d1d5db;
+      --arrow: #6b7280;
+
+      --neutral-fill: #f3f4f6;
+      --neutral-stroke: #9ca3af;
+      --neutral-text: #111827;
+      --neutral-sub: #4b5563;
+
+      --purple-fill: #ede9fe;
+      --purple-stroke: #7c3aed;
+      --purple-text: #4c1d95;
+      --purple-sub: #6d28d9;
+
+      --teal-fill: #ccfbf1;
+      --teal-stroke: #0d9488;
+      --teal-text: #134e4a;
+      --teal-sub: #0f766e;
+
+      --blue-fill: #dbeafe;
+      --blue-stroke: #2563eb;
+      --blue-text: #1e3a8a;
+      --blue-sub: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #374151;
+        --arrow: #9ca3af;
+
+        --neutral-fill: #1f2937;
+        --neutral-stroke: #6b7280;
+        --neutral-text: #f3f4f6;
+        --neutral-sub: #d1d5db;
+
+        --purple-fill: #2e1065;
+        --purple-stroke: #a78bfa;
+        --purple-text: #ede9fe;
+        --purple-sub: #c4b5fd;
+
+        --teal-fill: #042f2e;
+        --teal-stroke: #5eead4;
+        --teal-text: #ccfbf1;
+        --teal-sub: #99f6e4;
+
+        --blue-fill: #172554;
+        --blue-stroke: #93c5fd;
+        --blue-text: #dbeafe;
+        --blue-sub: #bfdbfe;
+      }
+    }
+    .lbl    { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; }
+    .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .col-hd { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: var(--fg); }
+    .card, .bridge, .rule, .hd {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: rise .7s ease forwards;
+    }
+    .flow {
+      opacity: 0;
+      stroke-dasharray: 10 10;
+      animation: fade .35s ease forwards, dash 3.2s linear infinite;
+    }
+    .d1 { animation-delay: .1s; }
+    .d2 { animation-delay: .35s; }
+    .d3 { animation-delay: .65s; }
+    .d4 { animation-delay: .95s; }
+    .d5 { animation-delay: 1.25s; }
+    .d6 { animation-delay: 1.55s; }
+    .d7 { animation-delay: 1.85s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -38; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card, .bridge, .rule, .hd, .flow { opacity: 1; transform: none; animation: none; }
+    }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="var(--arrow)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text class="col-hd hd d1" x="118" y="30" text-anchor="middle">Traditional</text>
+  <text class="col-hd hd d1" x="553" y="30" text-anchor="middle">Agentic</text>
+  <line class="rule d1" x1="40" y1="42" x2="640" y2="42" stroke="var(--border)" stroke-width="1"/>
+
+  <!-- row 1: CPU → LLM -->
+  <rect class="card d2" x="40" y="54" width="155" height="50" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d2" x="118" y="74" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">CPU</text>
+  <text class="sub card d2" x="118" y="92" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes bytes</text>
+  <line class="flow d2" x1="198" y1="79" x2="215" y2="79" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="bridge d3" x="218" y="59" width="234" height="40" rx="8" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
+  <text class="lbl bridge d3" x="335" y="74" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">bytes → tokens</text>
+  <text class="sub bridge d3" x="335" y="91" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">deterministic → statistical</text>
+  <line class="flow d3" x1="455" y1="79" x2="472" y2="79" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d4" x="475" y="54" width="155" height="50" rx="6" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d4" x="553" y="74" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">LLM</text>
+  <text class="sub card d4" x="553" y="92" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">processes tokens</text>
+
+  <line class="rule d4" x1="40" y1="120" x2="640" y2="120" stroke="var(--border)" stroke-width="1" opacity="0.6"/>
+
+  <!-- row 2: Kernel → Agent -->
+  <rect class="card d3" x="40" y="132" width="155" height="50" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d3" x="118" y="152" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">OS kernel</text>
+  <text class="sub card d3" x="118" y="170" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes instructions</text>
+  <line class="flow d3" x1="198" y1="157" x2="215" y2="157" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="bridge d4" x="218" y="137" width="234" height="40" rx="8" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
+  <text class="lbl bridge d4" x="335" y="152" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">syscalls → tool calls</text>
+  <text class="sub bridge d4" x="335" y="169" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">fixed ISA → extensible tools</text>
+  <line class="flow d4" x1="455" y1="157" x2="472" y2="157" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d5" x="475" y="132" width="155" height="50" rx="6" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d5" x="553" y="152" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">Agent</text>
+  <text class="sub card d5" x="553" y="170" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">routes tool calls</text>
+
+  <line class="rule d5" x1="40" y1="198" x2="640" y2="198" stroke="var(--border)" stroke-width="1" opacity="0.6"/>
+
+  <!-- row 3: OS → Harness -->
+  <rect class="card d4" x="40" y="210" width="155" height="50" rx="6" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d4" x="118" y="230" text-anchor="middle" dominant-baseline="central" fill="var(--blue-text)">Operating system</text>
+  <text class="sub card d4" x="118" y="248" text-anchor="middle" dominant-baseline="central" fill="var(--blue-sub)">hardware interface</text>
+  <line class="flow d4" x1="198" y1="235" x2="215" y2="235" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="bridge d5" x="218" y="215" width="234" height="40" rx="8" fill="var(--neutral-fill)" stroke="var(--neutral-stroke)" stroke-width="1.5"/>
+  <text class="lbl bridge d5" x="335" y="230" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-text)">HW API → model API</text>
+  <text class="sub bridge d5" x="335" y="247" text-anchor="middle" dominant-baseline="central" fill="var(--neutral-sub)">binary config → language config</text>
+  <line class="flow d5" x1="455" y1="235" x2="472" y2="235" stroke="var(--arrow)" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect class="card d6" x="475" y="210" width="155" height="50" rx="6" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+  <text class="lbl card d6" x="553" y="230" text-anchor="middle" dominant-baseline="central" fill="var(--blue-text)">Harness</text>
+  <text class="sub card d6" x="553" y="248" text-anchor="middle" dominant-baseline="central" fill="var(--blue-sub)">model interface</text>
+</svg>

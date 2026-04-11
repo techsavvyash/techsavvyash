@@ -1,0 +1,131 @@
+<svg width="100%" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Traditional computing vs agentic ecosystem stack comparison with animated reveals">
+  <style>
+    svg {
+      --fg: #111827;
+      --muted: #6b7280;
+      --border: #d1d5db;
+      --eq: #6b7280;
+
+      --purple-fill: #ede9fe;
+      --purple-stroke: #7c3aed;
+      --purple-text: #4c1d95;
+      --purple-sub: #6d28d9;
+
+      --teal-fill: #ccfbf1;
+      --teal-stroke: #0d9488;
+      --teal-text: #134e4a;
+      --teal-sub: #0f766e;
+
+      --blue-fill: #dbeafe;
+      --blue-stroke: #2563eb;
+      --blue-text: #1e3a8a;
+      --blue-sub: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --border: #374151;
+        --eq: #9ca3af;
+
+        --purple-fill: #2e1065;
+        --purple-stroke: #a78bfa;
+        --purple-text: #ede9fe;
+        --purple-sub: #c4b5fd;
+
+        --teal-fill: #042f2e;
+        --teal-stroke: #5eead4;
+        --teal-text: #ccfbf1;
+        --teal-sub: #99f6e4;
+
+        --blue-fill: #172554;
+        --blue-stroke: #93c5fd;
+        --blue-text: #dbeafe;
+        --blue-sub: #bfdbfe;
+      }
+    }
+    .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; }
+    .sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .eq { font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 600; fill: var(--eq); }
+    .col-hd { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: var(--fg); }
+    .card { opacity: 0; transform: translateY(10px); animation: rise .7s ease forwards; }
+    .eqmark { opacity: 0; animation: fade .45s ease forwards; }
+    .line { opacity: 0; animation: fade .45s ease forwards; }
+    .pulse {
+      stroke-dasharray: 8 10;
+      animation: dash 4s linear infinite;
+    }
+    .d1 { animation-delay: .1s; }
+    .d2 { animation-delay: .35s; }
+    .d3 { animation-delay: .6s; }
+    .d4 { animation-delay: .95s; }
+    .d5 { animation-delay: 1.2s; }
+    .d6 { animation-delay: 1.45s; }
+    .d7 { animation-delay: 1.8s; }
+    .d8 { animation-delay: 2.05s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -36; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card, .eqmark, .line { opacity: 1; transform: none; animation: none; }
+      .pulse { animation: none; }
+    }
+  </style>
+
+  <text class="col-hd card d1" x="150" y="32" text-anchor="middle">Traditional computing</text>
+  <text class="col-hd card d1" x="530" y="32" text-anchor="middle">Agentic ecosystem</text>
+  <line class="line d1 pulse" x1="40" y1="44" x2="640" y2="44" stroke="var(--border)" stroke-width="1.5"/>
+
+  <g class="card d2">
+    <rect x="40" y="60" width="220" height="58" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="150" y="84" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">CPU</text>
+    <text class="sub" x="150" y="102" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">bytes · deterministic</text>
+  </g>
+  <text class="eq eqmark d3" x="340" y="92" text-anchor="middle" dominant-baseline="central">≡</text>
+  <g class="card d4">
+    <rect x="420" y="60" width="220" height="58" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="530" y="84" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">LLM</text>
+    <text class="sub" x="530" y="102" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">tokens · probabilistic</text>
+  </g>
+
+  <g class="card d3">
+    <rect x="40" y="136" width="220" height="58" rx="8" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="150" y="160" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">OS kernel</text>
+    <text class="sub" x="150" y="178" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">orchestrates system calls</text>
+  </g>
+  <text class="eq eqmark d4" x="340" y="168" text-anchor="middle" dominant-baseline="central">≡</text>
+  <g class="card d5">
+    <rect x="420" y="136" width="220" height="58" rx="8" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="530" y="160" text-anchor="middle" dominant-baseline="central" fill="var(--teal-text)">Agent</text>
+    <text class="sub" x="530" y="178" text-anchor="middle" dominant-baseline="central" fill="var(--teal-sub)">orchestrates tool calls</text>
+  </g>
+
+  <g class="card d5">
+    <rect x="40" y="212" width="220" height="58" rx="8" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="150" y="236" text-anchor="middle" dominant-baseline="central" fill="var(--blue-text)">Operating system</text>
+    <text class="sub" x="150" y="254" text-anchor="middle" dominant-baseline="central" fill="var(--blue-sub)">system API surface</text>
+  </g>
+  <text class="eq eqmark d6" x="340" y="244" text-anchor="middle" dominant-baseline="central">≡</text>
+  <g class="card d7">
+    <rect x="420" y="212" width="220" height="58" rx="8" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+    <text class="lbl" x="530" y="236" text-anchor="middle" dominant-baseline="central" fill="var(--blue-text)">Harness</text>
+    <text class="sub" x="530" y="254" text-anchor="middle" dominant-baseline="central" fill="var(--blue-sub)">agent API surface</text>
+  </g>
+
+  <g class="line d8">
+    <line x1="278" y1="92" x2="314" y2="92" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="366" y1="92" x2="402" y2="92" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="278" y1="168" x2="314" y2="168" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="366" y1="168" x2="402" y2="168" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="278" y1="244" x2="314" y2="244" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="366" y1="244" x2="402" y2="244" stroke="var(--border)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

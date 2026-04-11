@@ -1,0 +1,108 @@
+<svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agentic stack as nested containment layers with animated reveals">
+  <style>
+    svg {
+      --fg: #111827;
+      --muted: #6b7280;
+      --ann: #374151;
+      --line: #9ca3af;
+
+      --purple-fill: #ede9fe;
+      --purple-stroke: #7c3aed;
+      --purple-text: #4c1d95;
+      --purple-sub: #6d28d9;
+
+      --teal-fill: #ccfbf1;
+      --teal-stroke: #0d9488;
+      --teal-text: #134e4a;
+      --teal-sub: #0f766e;
+
+      --blue-fill: #dbeafe;
+      --blue-stroke: #2563eb;
+      --blue-text: #1e3a8a;
+      --blue-sub: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --fg: #f3f4f6;
+        --muted: #9ca3af;
+        --ann: #d1d5db;
+        --line: #6b7280;
+
+        --purple-fill: #2e1065;
+        --purple-stroke: #a78bfa;
+        --purple-text: #ede9fe;
+        --purple-sub: #c4b5fd;
+
+        --teal-fill: #042f2e;
+        --teal-stroke: #5eead4;
+        --teal-text: #ccfbf1;
+        --teal-sub: #99f6e4;
+
+        --blue-fill: #172554;
+        --blue-stroke: #93c5fd;
+        --blue-text: #dbeafe;
+        --blue-sub: #bfdbfe;
+      }
+    }
+    .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 600; }
+    .sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 400; }
+    .ann { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 500; fill: var(--ann); }
+    .box, .label, .hint {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: rise .75s ease forwards;
+    }
+    .guide {
+      opacity: 0;
+      stroke-dasharray: 4 7;
+      animation: show .4s ease forwards, dash 3.5s linear infinite;
+    }
+    .d1 { animation-delay: .15s; }
+    .d2 { animation-delay: .55s; }
+    .d3 { animation-delay: .95s; }
+    .d4 { animation-delay: 1.3s; }
+    .d5 { animation-delay: 1.65s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes show {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -33; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .box, .label, .hint, .guide { opacity: 1; transform: none; animation: none; }
+    }
+  </style>
+
+  <!-- Harness outer box -->
+  <rect class="box d1" x="40" y="50" width="420" height="280" rx="16" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="1.5"/>
+  <text class="lbl label d1" x="250" y="78" text-anchor="middle" fill="var(--blue-text)">Harness</text>
+  <text class="sub label d1" x="250" y="96" text-anchor="middle" fill="var(--blue-sub)">system prompt + tool configuration</text>
+
+  <!-- Agent middle box -->
+  <rect class="box d2" x="80" y="124" width="340" height="156" rx="12" fill="var(--teal-fill)" stroke="var(--teal-stroke)" stroke-width="1.5"/>
+  <text class="lbl label d2" x="250" y="148" text-anchor="middle" fill="var(--teal-text)">Agent</text>
+  <text class="sub label d2" x="250" y="165" text-anchor="middle" fill="var(--teal-sub)">LLM call loop + tool dispatch</text>
+
+  <!-- LLM inner box -->
+  <rect class="box d3" x="120" y="194" width="260" height="66" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="1.5"/>
+  <text class="lbl label d3" x="250" y="220" text-anchor="middle" dominant-baseline="central" fill="var(--purple-text)">LLM</text>
+  <text class="sub label d3" x="250" y="240" text-anchor="middle" dominant-baseline="central" fill="var(--purple-sub)">token → token</text>
+
+  <!-- Right annotations -->
+  <line class="guide d4" x1="460" y1="78" x2="478" y2="78" stroke="var(--line)" stroke-width="1"/>
+  <circle class="hint d4" cx="460" cy="78" r="2.5" fill="var(--line)"/>
+  <text class="ann hint d4" x="484" y="82">≡ operating system</text>
+
+  <line class="guide d4" x1="420" y1="148" x2="478" y2="148" stroke="var(--line)" stroke-width="1"/>
+  <circle class="hint d4" cx="420" cy="148" r="2.5" fill="var(--line)"/>
+  <text class="ann hint d4" x="484" y="152">≡ OS kernel</text>
+
+  <line class="guide d5" x1="380" y1="224" x2="478" y2="224" stroke="var(--line)" stroke-width="1"/>
+  <circle class="hint d5" cx="380" cy="224" r="2.5" fill="var(--line)"/>
+  <text class="ann hint d5" x="484" y="228">≡ CPU</text>
+</svg>
