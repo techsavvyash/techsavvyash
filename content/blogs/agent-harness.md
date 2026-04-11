@@ -12,13 +12,11 @@ This reply made me curious as to where the _Harness_ would sit in this entire st
 
 According to me, the third component in the above comparison should be the Operating System itself, and it equates to the *Harness*, which makes the updated list look something like this:
 
-```
-- LLM = CPU (data: tokens not bytes, dynamics: statistical and vague not deterministic and precise)
-
-- Agent = operating system kernel
-
-- Harness = operating system
-```
+| Agentic    | ≡   | Traditional computing                                                                         |
+| ---------- | --- | --------------------------------------------------------------------------------------------- |
+| **LLM**    | ≡   | CPU — *tokens not bytes; statistical and vague, not deterministic and precise* |
+| **Agent**  | ≡   | Operating system kernel                                                                       |
+| **Harness**| ≡   | Operating system                                                                              |
 
 ![Stack comparison: traditional computing vs agentic ecosystem](../images/stack-comparison.svg)
 
