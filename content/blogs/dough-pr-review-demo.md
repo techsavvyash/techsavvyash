@@ -51,3 +51,5 @@ runtime that opens an AgentFS SQLite file for the workspace. The
 infrastructure is up (Garage on Railway, APISIX standalone behind
 `forward-auth`), but the worker rootfs hasn't been rebuilt with the
 runner+shim yet. Next iteration.
+
+<!-- bump for fresh sha -->
