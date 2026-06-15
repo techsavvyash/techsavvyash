@@ -25,3 +25,9 @@ I build reliable AI infrastructure, agent platforms, and distributed systems tha
 **Distributed Systems:** PostgreSQL, Redis-style data stores, queues, consensus fundamentals, service-oriented architectures
 
 **Open Source:** maintainer workflows, technical writing, issue triage, community-facing documentation
+
+## Get in Touch
+
+- Email: [yami8b@gmail.com](mailto:yami8b@gmail.com)
+- GitHub: [techsavvyash](https://github.com/techsavvyash)
+- LinkedIn: [Yash Mittal](https://in.linkedin.com/in/yash-mittal-446747136)
