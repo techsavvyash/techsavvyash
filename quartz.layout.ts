@@ -8,6 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
+      Resume: "/static/Yash_Mittal_Resume.pdf",
       GitHub: "https://github.com/techsavvyash",
       Twitter: "https://x.com/techsavvyash_",
       "Flywheel Discord": "https://discord.gg/UTnAR6UpvS",
@@ -37,6 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
+        { Component: Component.Resume() },
       ],
     }),
     Component.Explorer(),
@@ -61,6 +63,7 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.Resume() },
       ],
     }),
     Component.Explorer(),
