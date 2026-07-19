@@ -1,5 +1,5 @@
 ---
-title: Yash Mittal | Software Engineer
+title: ~/techsavvyash
 description: Personal website of Yash Mittal, a software engineer writing about distributed systems, databases, AI coding agents, and production software.
 socialDescription: Software engineer focused on distributed systems, databases, AI coding agents, and production-grade software.
 ---
