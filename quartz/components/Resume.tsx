@@ -5,7 +5,7 @@ import { classNames } from "../util/lang"
 const Resume: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
     <a
-      href="/static/Yash_Mittal_Resume.pdf"
+      href="/static/resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
       class={classNames(displayClass, "resume-link")}

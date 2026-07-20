@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "/static/resume.pdf"
+    }
+  ]
 }
